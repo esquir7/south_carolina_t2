@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+:root{
+    --primary-light: #AF8F6F;
+    --primary-dark: #74512D;
+    --black: #000000;
+    --white: #fff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#header{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 8px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/*NAV*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 18px;
+}
+nav .logo {
+    font-size: 20px;
+}
+nav ul:hover {
+    background-color: var(--primary-dark);
+}
+
+/*ASIDE*/
+
+aside img{
+    display: flex;
+    width: 100px;
+    margin-top: 500px;
+}
+aisde p {
+    display: flex;
+    margin-top: 100px;
+    color: var(--primary-dark);
+    float: inline-end;
+}
+
+
+/* Container for the content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Navigation link styling */
+
+.nav-link {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-dark);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-dark);
+}
+
+/* External link styling */
+
+a.external-link {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+a.external-link:hover {
+    text-decoration: underline;
+}
+
+/* Ordered list styling */
+ol {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Image styling specific to Myrtle Beach and Columbia pages */
+ img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Absolute positioning example */
+
+.absolute-example {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*HEADER*/
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 60px;
+}
+.header-content h1{
+    font-size: 60px;
+    color: var(--primary-dark);
+}
+.header-content p{
+    font-size: 20px;
+    color: var(--primary-dark);
+}
+
+/*PRIMARY BTN*/
+
+.primary-btn{
+    padding: 10px 24px;
+    background: var(--primary-light);
+    color: #F8F4E1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+}
+.menu-btn{
+    position: absoulte;
+    right: 16px;
+    top: 16px;
+    background: var(--primary-light);
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none
+}
+
+/*ABOUT*/
+
+.about {
+    display: flex;
+    margin-top: 120px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about {
+    width: 300px;
+}
+.about p{
+    color: gray;
+}
+.about img {
+    max-width: 100%;
+    display: flex;
+}
+
+/*THINGS TO DO*/
+
+.thingstodo {
+    display: flex;
+    margin-top: 120px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-shadow: 4px 2px #0000;
+}
+.thingstodo {
+    width: 300px;
+}
+.thingstodo p{
+    color: var(--primary-dark);
+    text-shadow: 4px 2px #0000;
+}
+.thingstodo img {
+    max-width: 100%;
+}
+
+
+/*CONATCT US*/
+
+#contact-us {
+    background-image: url("contact-us.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin-top: 120px;
+}
+.contact-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    gap: 16px;
+    padding: 0 16px;
+}
+.contact-us-content h1 {
+    color: var(--primary-dark);
+}
+.contact-us-content p {
+    max-width: 500px;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    align-items: center;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+footer .logo {
+    color: var(--primary-dark);
+}
+
+
+/* Contact Page */
+
+#contact-header {
+    min-height: 500px;
+    background-image: url("banner.webp");
+    background-size: cover;
+    background-position: center;
+}
+#contact-us {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    gap: 60px;
+}
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+.inputsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.inputsWrapper input {
+    padding: 10px 16px;
+    width: 100%;
+    border: 1px solid var(--primary-dark);
+    outline: none;
+}
+.address {
+    flex-basis: 50%;
+}
+.detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 60px;
+}
+
+.detail img {
+    width: 40px;
+    height: 40px;
+}
+.detail h6 {
+    color: gray;
+}
+.followUsWrapper {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.socialLinks {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin-top: 16px;
+}
+
+/*MEDIA*/
+@media only screen and (max-width:520px) {
+    #header {
+        min-height: 50vh;
+    }
+    .header-content h1 {
+        font-size: 32px;
+    }
+    .header-content p {
+        font-size: 24px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    nav {
+        padding: 16px;
+    }
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 80%;
+        height: 100%;
+        align-items: end;
+        padding-top: 80px;
+        margin-right: -900px;
+        transition: all 0.3s ease;
+    }
+    nav ul.active{
+        margin-right: 0;
+    }
+    nav li{
+        border-bottom: 1px solid var(--primary-dark);
+        width: 100%;
+        padding: 8px 16px;
+        text-align: right;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+    }
+    #contact-us{
+        flex-direction: column;
+    }
+    .inputsWrapper {
+        margin-left: 0;
+    }
+}
